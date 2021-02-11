@@ -1,0 +1,22 @@
+[package]
+name = "serde_lson"
+version = "0.1.0"
+authors = ["Walter Tetzner <walter@waltertetzner.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "*", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.5"
+maplit = "*"
+logos = "*"
+
+[lib]
+name = "serde_lson"
+path = "src/lib.rs"
+
+[[bin]]
+name = "serde-lson-test"
+path = "src/main.rs"
